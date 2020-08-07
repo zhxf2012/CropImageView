@@ -39,16 +39,27 @@ public struct CropImageView: View {
     @State private var scale: CGFloat = 1.0
     
     @State private var clipped = false
-    @State var inputImage: UIImage
+    @State public var inputImage: UIImage
     @Binding var resultImage: UIImage?
-    var cropSize: CGSize
+    public var cropSize: CGSize
     
     @State var tempResult: UIImage?
     @State var result: Image?
     
     @Environment(\.presentationMode) var presentationMode
 
-    
+    /*Fix error by spm: 'CropImageView' initializer is inaccessible due to 'internal' protection level
+     .Lesson learned: all public struct need a public init
+     https://stackoverflow.com/questions/54673224/public-struct-in-framework-init-is-inaccessible-due-to-internal-protection-lev?rq=1
+     .Maybe there is another way.
+     Now I have made the inputImage and cropSize public ,seems the probelem has gone
+     */
+//    public init(input:UIImage,resultImage: Binding<UIImage?> ,toCropSize:CGSize) {
+//        self.inputImage = input
+//        self._resultImage = resultImage //?? Binding.constant(nil)
+//        self.cropSize = toCropSize
+//    }
+
     var imageView: some View {
         Image(uiImage: inputImage)
             .resizable()
