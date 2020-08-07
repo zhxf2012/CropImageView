@@ -1,3 +1,4 @@
 # CropImageView
 
-A description of this package.
+CropImageView is a lightweight library can crop images in special areas.
+
