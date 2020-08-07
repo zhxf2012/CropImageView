@@ -33,7 +33,7 @@ struct RectHole: Shape {
 }
 
 @available(iOS 13.0, OSX 10.15, *)
-struct CropImageView: View {
+public struct CropImageView: View {
      
     @State private var dragAmount = CGSize.zero
     @State private var scale: CGFloat = 1.0
@@ -82,7 +82,7 @@ struct CropImageView: View {
         )
     }
     
-    var body: some View {
+    public var body: some View {
         GeometryReader { proxy  in
             ZStack {
                 ZStack {
