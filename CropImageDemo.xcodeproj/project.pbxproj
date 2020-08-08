@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,7 +14,7 @@
 		839FEE3824DD471700236B88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 839FEE3724DD471700236B88 /* Preview Assets.xcassets */; };
 		839FEE3B24DD471700236B88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839FEE3924DD471700236B88 /* LaunchScreen.storyboard */; };
 		839FEE4624DD4C6700236B88 /* demo.png in Resources */ = {isa = PBXBuildFile; fileRef = 839FEE4524DD4C6700236B88 /* demo.png */; };
-		839FEE4A24DD575F00236B88 /* CropImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839FEE4924DD575F00236B88 /* CropImageView.swift */; };
+		839FEE5624DE307200236B88 /* CropImageView in Frameworks */ = {isa = PBXBuildFile; productRef = 839FEE5524DE307200236B88 /* CropImageView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +28,6 @@
 		839FEE3C24DD471700236B88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		839FEE4224DD473500236B88 /* CropImageDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CropImageDemo.entitlements; sourceTree = "<group>"; };
 		839FEE4524DD4C6700236B88 /* demo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demo.png; sourceTree = "<group>"; };
-		839FEE4924DD575F00236B88 /* CropImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				839FEE5624DE307200236B88 /* CropImageView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +61,6 @@
 		839FEE2D24DD470F00236B88 /* CropImageDemo */ = {
 			isa = PBXGroup;
 			children = (
-				839FEE4724DD575F00236B88 /* Sources */,
 				839FEE4224DD473500236B88 /* CropImageDemo.entitlements */,
 				839FEE2E24DD470F00236B88 /* AppDelegate.swift */,
 				839FEE3024DD470F00236B88 /* SceneDelegate.swift */,
@@ -83,22 +82,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		839FEE4724DD575F00236B88 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				839FEE4824DD575F00236B88 /* CropImageView */,
-			);
-			path = Sources;
-			sourceTree = SOURCE_ROOT;
-		};
-		839FEE4824DD575F00236B88 /* CropImageView */ = {
-			isa = PBXGroup;
-			children = (
-				839FEE4924DD575F00236B88 /* CropImageView.swift */,
-			);
-			path = CropImageView;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,6 +98,9 @@
 			dependencies = (
 			);
 			name = CropImageDemo;
+			packageProductDependencies = (
+				839FEE5524DE307200236B88 /* CropImageView */,
+			);
 			productName = CropImageDemo;
 			productReference = 839FEE2B24DD470F00236B88 /* CropImageDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -143,6 +129,9 @@
 				Base,
 			);
 			mainGroup = 839FEE2224DD470F00236B88;
+			packageReferences = (
+				839FEE5424DE307200236B88 /* XCRemoteSwiftPackageReference "CropImageView" */,
+			);
 			productRefGroup = 839FEE2C24DD470F00236B88 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -171,7 +160,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				839FEE4A24DD575F00236B88 /* CropImageView.swift in Sources */,
 				839FEE2F24DD470F00236B88 /* AppDelegate.swift in Sources */,
 				839FEE3124DD470F00236B88 /* SceneDelegate.swift in Sources */,
 				839FEE3324DD470F00236B88 /* ContentView.swift in Sources */,
@@ -374,6 +362,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		839FEE5424DE307200236B88 /* XCRemoteSwiftPackageReference "CropImageView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/zhxf2012/CropImageView";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		839FEE5524DE307200236B88 /* CropImageView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 839FEE5424DE307200236B88 /* XCRemoteSwiftPackageReference "CropImageView" */;
+			productName = CropImageView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 839FEE2324DD470F00236B88 /* Project object */;
 }

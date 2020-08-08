@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CropImageView",
+        "repositoryURL": "https://github.com/zhxf2012/CropImageView",
+        "state": {
+          "branch": "master",
+          "revision": "aba1f72d74aa2c28e06494284a78291b0bbebf94",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

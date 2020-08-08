@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import CropImageView
 
 struct ContentView: View {
     @State var showCropView = false
