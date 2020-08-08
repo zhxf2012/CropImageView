@@ -31,11 +31,8 @@ Alternatively, if you're unable to use SPM for some reason, you can import it Ma
 Add ` CropImageView.swift` to your project.
 
 ## Usage
- import CropImageView
- struct ContentView: View {
-    @State var showCropView = false
-    @State private var cropedImage: UIImage?
-    
+### Simple use
+
     var inputImage: UIImage {
         return UIImage(named: "demo") ??  UIImage(systemName: "sun.haze.fill")!
     }
@@ -63,7 +60,7 @@ Add ` CropImageView.swift` to your project.
     func finishedCrop() {
         
     }
-}
+
 
 ## Author
 
