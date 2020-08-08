@@ -43,10 +43,10 @@ public struct CropImageView: View {
     @Binding var resultImage: UIImage?
     public var cropSize: CGSize
     
-    @State var tempResult: UIImage?
-    @State var result: Image?
+    @State private var tempResult: UIImage?
+    @State private var result: Image?
     
-    @Environment(\.presentationMode) var presentationMode
+    @Environment(\.presentationMode) public var presentationMode
 
     /*Fix error by spm: 'CropImageView' initializer is inaccessible due to 'internal' protection level
      .Lesson learned: all public struct need a public init
