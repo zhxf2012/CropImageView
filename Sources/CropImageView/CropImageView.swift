@@ -40,7 +40,7 @@ public struct CropImageView: View {
     
     @State private var clipped = false
     @State public var inputImage: UIImage
-    @Binding var resultImage: UIImage?
+    @Binding public var resultImage: UIImage?
     public var cropSize: CGSize
     
     @State private var tempResult: UIImage?
