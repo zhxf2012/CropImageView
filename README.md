@@ -16,9 +16,8 @@ A SwiftUI implementation of crop images in special areas.. Here's some of its us
 To run the example project, clone the repo, and run.
 
 ## Requirements
-Xcode 11.5 and above
-iOS 13 
-MacOS 10.15 and above
+* Xcode 11.5 and above
+* iOS 13  or MacOS 10.15 and above
 
  
 ## Installation
