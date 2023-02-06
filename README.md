@@ -1,16 +1,17 @@
 # CropImageView
-Crop Images in SwiftUI .
+Crop Images in SwiftUI.
 
-A SwiftUI implementation of crop images in special areas.. Here's some of its useful features:
- * supports input with a UIImage and cropSize.
- * Supports Drag and drop the input image
- * Supports Scale for zoom in and out.
- * Supports save the result UIImage
- * Supports show in present and dismiss
+A SwiftUI implementation of cropping images in selected areas. Here are some of its useful features:
+
+ * Supports input with a UIImage and cropSize.
+ * Supports dragging and dropping the input image
+ * Supports scale for zooming in and out.
+ * Supports saving the result UIImage
+ * Supports showing in present and dismiss
  * Supports SwiftUI in iOS 13 and MacOS 10.15
  
  ### Pull requests and suggestions welcome :)
-<a href="https://github.com/zhxf2012/CropImageView/issues">Report Bug</a>  ·  <a href="https://github.com/zhxf2012/CropImageView/issues">Suggest a feature</a>
+<a href="https://github.com/zhxf2012/CropImageView/issues">Report Bug</a>· <a href="https://github.com/zhxf2012/CropImageView/issues">Suggest a feature</a>
  
 ## Getting Started
 To run the example project, clone the repo, and run.
@@ -21,16 +22,20 @@ To run the example project, clone the repo, and run.
 
  
 ## Installation
-CropImageView is a *swift package*.
- * It can be imported into an app project using Xcode’s new Swift Packages option, which is located within the File menu.
- * When asked, use this repository's url: https://github.com/zhxf2012/CropImageView
 
-Alternatively, if you're unable to use SPM for some reason, you can import it Manual
-### Manual
+### As Swift Package
+CropImageView is a *swift package*.
+ * It can be imported into an app project using Xcode’s new Swift Packages option, which is located in the File menu.
+ * When asked, use this repository's URL: https://github.com/zhxf2012/CropImageView
+
+Alternatively, if you're unable to use SPM for some reason, you can import it manually.
+
+### Manual installation
 Add ` CropImageView.swift` to your project.
 
 ## Usage
 ### Simple use
+
 
     var inputImage: UIImage {
         return UIImage(named: "demo") ??  UIImage(systemName: "sun.haze.fill")!
