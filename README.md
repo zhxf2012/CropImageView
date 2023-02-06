@@ -36,7 +36,6 @@ Add ` CropImageView.swift` to your project.
 ## Usage
 ### Simple use
 
-
     var inputImage: UIImage {
         return UIImage(named: "demo") ??  UIImage(systemName: "sun.haze.fill")!
     }
@@ -49,7 +48,7 @@ Add ` CropImageView.swift` to your project.
                 Text("Show the crop view")
             }
             
-            if self.cropedImage != nil {
+            if self.croppedImage != nil {
                 Image(uiImage: self.cropedImage!)
                     .resizable()
                     .scaledToFit()
@@ -57,7 +56,7 @@ Add ` CropImageView.swift` to your project.
             }
         }
         .sheet(isPresented: $showCropView,onDismiss:finishedCrop ) {
-            CropImageView(inputImage: self.inputImage, resultImage: self.$cropedImage, cropSize: CGSize(width: 250, height: 250))
+            CropImageView(inputImage: self.inputImage, resultImage: self.$croppedImage, cropSize: CGSize(width: 250, height: 250))
         }
     }
     
