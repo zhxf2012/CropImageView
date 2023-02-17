@@ -65,13 +65,13 @@ public struct CropImageView: View {
             .aspectRatio(contentMode: .fit)
             
             
-            // 缩放
+            // 缩放 (Zoom)
             .gesture(MagnificationGesture()
                 .onChanged { value in
                     self.scale = value.magnitude
                 }
         )
-            // 拖拽
+            // 拖拽 (Drag and drop)
             .highPriorityGesture(
                 DragGesture()
                     .onChanged { value in
@@ -82,7 +82,7 @@ public struct CropImageView: View {
                 }
         )
             
-            //点击放大
+            //点击放大 (Click to enlarge)
             .gesture(
                 TapGesture()
                     .onEnded { _ in
