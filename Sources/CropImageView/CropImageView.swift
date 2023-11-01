@@ -173,7 +173,6 @@ public struct CropImageView: View {
                 }
                 .accentColor(.accentColor)
             }
-            .padding()
         }
     }
     
